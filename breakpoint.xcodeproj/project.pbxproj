@@ -13,6 +13,12 @@
 		6A71F06A206D1B1600FE451B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A71F068206D1B1600FE451B /* Main.storyboard */; };
 		6A71F06C206D1B1600FE451B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A71F06B206D1B1600FE451B /* Assets.xcassets */; };
 		6A71F06F206D1B1600FE451B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A71F06D206D1B1600FE451B /* LaunchScreen.storyboard */; };
+		6A71F084206D1F0500FE451B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A71F083206D1F0400FE451B /* GoogleService-Info.plist */; };
+		6A71F086206D5B5400FE451B /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A71F085206D5B5400FE451B /* DataService.swift */; };
+		6A71F08A206D6E7200FE451B /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A71F089206D6E7200FE451B /* AuthVC.swift */; };
+		6A71F08C206D6EDC00FE451B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A71F08B206D6EDC00FE451B /* LoginVC.swift */; };
+		6A71F090206D723700FE451B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A71F08F206D723700FE451B /* AuthService.swift */; };
+		976D2963685EC5033071D89B /* Pods_breakpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60F15B6681D2A300F0280CC /* Pods_breakpoint.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,14 @@
 		6A71F06B206D1B1600FE451B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A71F06E206D1B1600FE451B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A71F070206D1B1600FE451B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A71F083206D1F0400FE451B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6A71F085206D5B5400FE451B /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		6A71F089206D6E7200FE451B /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		6A71F08B206D6EDC00FE451B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		6A71F08F206D723700FE451B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		A237148D5AEEA7C143844A5A /* Pods-breakpoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakpoint.release.xcconfig"; path = "Pods/Target Support Files/Pods-breakpoint/Pods-breakpoint.release.xcconfig"; sourceTree = "<group>"; };
+		A7159F361C5BAE36F31F0472 /* Pods-breakpoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakpoint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-breakpoint/Pods-breakpoint.debug.xcconfig"; sourceTree = "<group>"; };
+		E60F15B6681D2A300F0280CC /* Pods_breakpoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_breakpoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				976D2963685EC5033071D89B /* Pods_breakpoint.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2140FE73B5FA9C905F11657A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E60F15B6681D2A300F0280CC /* Pods_breakpoint.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		241BA1C942FFB97E0CFEF34B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7159F361C5BAE36F31F0472 /* Pods-breakpoint.debug.xcconfig */,
+				A237148D5AEEA7C143844A5A /* Pods-breakpoint.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6A71F056206D1B1600FE451B = {
 			isa = PBXGroup;
 			children = (
 				6A71F061206D1B1600FE451B /* breakpoint */,
 				6A71F060206D1B1600FE451B /* Products */,
+				241BA1C942FFB97E0CFEF34B /* Pods */,
+				2140FE73B5FA9C905F11657A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +99,7 @@
 				6A71F068206D1B1600FE451B /* Main.storyboard */,
 				6A71F06B206D1B1600FE451B /* Assets.xcassets */,
 				6A71F06D206D1B1600FE451B /* LaunchScreen.storyboard */,
+				6A71F083206D1F0400FE451B /* GoogleService-Info.plist */,
 				6A71F070206D1B1600FE451B /* Info.plist */,
 			);
 			path = breakpoint;
@@ -75,6 +110,8 @@
 			children = (
 				6A71F066206D1B1600FE451B /* SecondViewController.swift */,
 				6A71F064206D1B1600FE451B /* FirstViewController.swift */,
+				6A71F089206D6E7200FE451B /* AuthVC.swift */,
+				6A71F08B206D6EDC00FE451B /* LoginVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -82,6 +119,8 @@
 		6A71F07F206D1E5400FE451B /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				6A71F085206D5B5400FE451B /* DataService.swift */,
+				6A71F08F206D723700FE451B /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -114,9 +153,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A71F073206D1B1600FE451B /* Build configuration list for PBXNativeTarget "breakpoint" */;
 			buildPhases = (
+				6E1BB502DB032798A9805178 /* [CP] Check Pods Manifest.lock */,
 				6A71F05B206D1B1600FE451B /* Sources */,
 				6A71F05C206D1B1600FE451B /* Frameworks */,
 				6A71F05D206D1B1600FE451B /* Resources */,
+				CA53193C5EAA457E6C5D1D92 /* [CP] Embed Pods Frameworks */,
+				99AC69D69BC5BE2FF7183F7A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A71F06F206D1B1600FE451B /* LaunchScreen.storyboard in Resources */,
+				6A71F084206D1F0500FE451B /* GoogleService-Info.plist in Resources */,
 				6A71F06C206D1B1600FE451B /* Assets.xcassets in Resources */,
 				6A71F06A206D1B1600FE451B /* Main.storyboard in Resources */,
 			);
@@ -174,14 +217,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6E1BB502DB032798A9805178 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-breakpoint-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99AC69D69BC5BE2FF7183F7A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-breakpoint/Pods-breakpoint-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA53193C5EAA457E6C5D1D92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-breakpoint/Pods-breakpoint-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-breakpoint/Pods-breakpoint-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6A71F05B206D1B1600FE451B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A71F08A206D6E7200FE451B /* AuthVC.swift in Sources */,
 				6A71F067206D1B1600FE451B /* SecondViewController.swift in Sources */,
+				6A71F08C206D6EDC00FE451B /* LoginVC.swift in Sources */,
 				6A71F063206D1B1600FE451B /* AppDelegate.swift in Sources */,
 				6A71F065206D1B1600FE451B /* FirstViewController.swift in Sources */,
+				6A71F086206D5B5400FE451B /* DataService.swift in Sources */,
+				6A71F090206D723700FE451B /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +423,7 @@
 		};
 		6A71F074206D1B1600FE451B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7159F361C5BAE36F31F0472 /* Pods-breakpoint.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -330,6 +438,7 @@
 		};
 		6A71F075206D1B1600FE451B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A237148D5AEEA7C143844A5A /* Pods-breakpoint.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

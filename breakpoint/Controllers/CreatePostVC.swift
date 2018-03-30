@@ -20,21 +20,19 @@ class CreatePostVC: UIViewController {
         super.viewDidLoad()
         textView.delegate = self
         // Do any additional setup after loading the view.
+        sendBtn.bindToKeyboard()
     }
 
     @IBAction func sendBtnWasPressed(_ sender: Any) {
-        if textView.text != nil && textView.text != "Say something here ..." {
-            sendBtn.isEnabled = false
-            DataService.instance.uploadPost(withMesaage: textView.text!, forUID: (Auth.auth().currentUser?.uid)!, withGroupKey: nil, sendComplete: { (isComplete) in
-                if isComplete {
-                    self.sendBtn.isEnabled = true
-                    self.dismiss(animated: true, completion: nil)
-                } else {
-                    self.sendBtn.isEnabled = true
-                    print("There was an error while sending message!")
-                }
-            })
-        }
+        DataService.instance.uploadPost(withMesaage: textView.text!, forUID: (Auth.auth().currentUser?.uid)!, withGroupKey: nil, sendComplete: { (isComplete) in
+            if isComplete {
+                self.sendBtn.isEnabled = true
+                self.dismiss(animated: true, completion: nil)
+            } else {
+                self.sendBtn.isEnabled = true
+                print("There was an error while sending message!")
+            }
+        })
     }
     
     @IBOutlet weak var closeBtnWasPressed: UIButton!
@@ -43,5 +41,14 @@ class CreatePostVC: UIViewController {
 extension CreatePostVC: UITextViewDelegate {
     func textViewDidBeginEditing(_ textView: UITextView) {
         textView.text = ""
+    }
+    
+    func textViewDidChange(_ textView: UITextView) {
+        print(textView.text)
+        if !textView.text.isEmpty && textView.text != "Say something here ..." {
+            sendBtn.isEnabled = true
+        } else {
+            sendBtn.isEnabled = false
+        }
     }
 }

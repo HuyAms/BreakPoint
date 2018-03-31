@@ -35,7 +35,10 @@ class CreatePostVC: UIViewController {
         })
     }
     
-    @IBOutlet weak var closeBtnWasPressed: UIButton!
+    @IBAction func closeBtnWasPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
 
 extension CreatePostVC: UITextViewDelegate {
@@ -44,7 +47,6 @@ extension CreatePostVC: UITextViewDelegate {
     }
     
     func textViewDidChange(_ textView: UITextView) {
-        print(textView.text)
         if !textView.text.isEmpty && textView.text != "Say something here ..." {
             sendBtn.isEnabled = true
         } else {

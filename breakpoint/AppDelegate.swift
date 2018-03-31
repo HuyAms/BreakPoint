@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          FirebaseApp.configure()
         
         if Auth.auth().currentUser == nil {
+            print("Havenot logged in")
             let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
             let authVC = storyboard.instantiateViewController(withIdentifier: "AuthVC")
             window?.makeKeyAndVisible()

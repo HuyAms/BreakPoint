@@ -15,9 +15,6 @@ class FeedCell: UITableViewCell {
     @IBOutlet weak var contentLabel: UILabel!
     
     func configureCell(profileImage: UIImage, email: String, content: String) {
-        print("Cell Config")
-        print("email: ", email)
-        print("content: ", content)
         self.profileImage.image = profileImage
         self.emailLbl.text = email
         self.contentLabel.text = content

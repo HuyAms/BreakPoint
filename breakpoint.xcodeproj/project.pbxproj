@@ -25,6 +25,8 @@
 		6A71F09A206E2ABF00FE451B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A71F099206E2ABF00FE451B /* Message.swift */; };
 		6A71F09C206E45A500FE451B /* CreateGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A71F09B206E45A500FE451B /* CreateGroupVC.swift */; };
 		6A71F09E206F2F9E00FE451B /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A71F09D206F2F9E00FE451B /* UserCell.swift */; };
+		6A71F0A1206F573E00FE451B /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A71F0A0206F573E00FE451B /* GroupCell.swift */; };
+		6A71F0A3206F5E2600FE451B /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A71F0A2206F5E2600FE451B /* Group.swift */; };
 		976D2963685EC5033071D89B /* Pods_breakpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60F15B6681D2A300F0280CC /* Pods_breakpoint.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,8 @@
 		6A71F099206E2ABF00FE451B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		6A71F09B206E45A500FE451B /* CreateGroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupVC.swift; sourceTree = "<group>"; };
 		6A71F09D206F2F9E00FE451B /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		6A71F0A0206F573E00FE451B /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
+		6A71F0A2206F5E2600FE451B /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		A237148D5AEEA7C143844A5A /* Pods-breakpoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakpoint.release.xcconfig"; path = "Pods/Target Support Files/Pods-breakpoint/Pods-breakpoint.release.xcconfig"; sourceTree = "<group>"; };
 		A7159F361C5BAE36F31F0472 /* Pods-breakpoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakpoint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-breakpoint/Pods-breakpoint.debug.xcconfig"; sourceTree = "<group>"; };
 		E60F15B6681D2A300F0280CC /* Pods_breakpoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_breakpoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				6A71F099206E2ABF00FE451B /* Message.swift */,
+				6A71F0A2206F5E2600FE451B /* Group.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 			children = (
 				6A71F097206E28B900FE451B /* FeedCell.swift */,
 				6A71F09D206F2F9E00FE451B /* UserCell.swift */,
+				6A71F0A0206F573E00FE451B /* GroupCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -303,8 +309,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A71F0A1206F573E00FE451B /* GroupCell.swift in Sources */,
 				6A71F092206E0CB000FE451B /* MeVC.swift in Sources */,
 				6A71F08A206D6E7200FE451B /* AuthVC.swift in Sources */,
+				6A71F0A3206F5E2600FE451B /* Group.swift in Sources */,
 				6A71F096206E1F1200FE451B /* UIViewExt.swift in Sources */,
 				6A71F09C206E45A500FE451B /* CreateGroupVC.swift in Sources */,
 				6A71F094206E195300FE451B /* CreatePostVC.swift in Sources */,
@@ -455,7 +463,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6V67VT3VM7;
 				INFOPLIST_FILE = breakpoint/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huytrinh.breakpoint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -470,7 +480,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6V67VT3VM7;
 				INFOPLIST_FILE = breakpoint/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huytrinh.breakpoint;
 				PRODUCT_NAME = "$(TARGET_NAME)";

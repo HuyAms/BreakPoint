@@ -18,7 +18,9 @@ class AuthVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        dismiss(animated: true, completion: nil)
+        if Auth.auth().currentUser != nil {
+            dismiss(animated: true, completion: nil)
+        }
     }
 
     override func didReceiveMemoryWarning() {

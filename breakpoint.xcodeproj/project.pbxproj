@@ -27,6 +27,8 @@
 		6A71F09E206F2F9E00FE451B /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A71F09D206F2F9E00FE451B /* UserCell.swift */; };
 		6A71F0A1206F573E00FE451B /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A71F0A0206F573E00FE451B /* GroupCell.swift */; };
 		6A71F0A3206F5E2600FE451B /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A71F0A2206F5E2600FE451B /* Group.swift */; };
+		6A71F0A5206F755A00FE451B /* GroupFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A71F0A4206F755A00FE451B /* GroupFeedCell.swift */; };
+		6A71F0A7206F75DC00FE451B /* GroupFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A71F0A6206F75DC00FE451B /* GroupFeedVC.swift */; };
 		976D2963685EC5033071D89B /* Pods_breakpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60F15B6681D2A300F0280CC /* Pods_breakpoint.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,8 @@
 		6A71F09D206F2F9E00FE451B /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		6A71F0A0206F573E00FE451B /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		6A71F0A2206F5E2600FE451B /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		6A71F0A4206F755A00FE451B /* GroupFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedCell.swift; sourceTree = "<group>"; };
+		6A71F0A6206F75DC00FE451B /* GroupFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedVC.swift; sourceTree = "<group>"; };
 		A237148D5AEEA7C143844A5A /* Pods-breakpoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakpoint.release.xcconfig"; path = "Pods/Target Support Files/Pods-breakpoint/Pods-breakpoint.release.xcconfig"; sourceTree = "<group>"; };
 		A7159F361C5BAE36F31F0472 /* Pods-breakpoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakpoint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-breakpoint/Pods-breakpoint.debug.xcconfig"; sourceTree = "<group>"; };
 		E60F15B6681D2A300F0280CC /* Pods_breakpoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_breakpoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +137,7 @@
 				6A71F091206E0CB000FE451B /* MeVC.swift */,
 				6A71F093206E195300FE451B /* CreatePostVC.swift */,
 				6A71F09B206E45A500FE451B /* CreateGroupVC.swift */,
+				6A71F0A6206F75DC00FE451B /* GroupFeedVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 				6A71F097206E28B900FE451B /* FeedCell.swift */,
 				6A71F09D206F2F9E00FE451B /* UserCell.swift */,
 				6A71F0A0206F573E00FE451B /* GroupCell.swift */,
+				6A71F0A4206F755A00FE451B /* GroupFeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -323,7 +329,9 @@
 				6A71F063206D1B1600FE451B /* AppDelegate.swift in Sources */,
 				6A71F065206D1B1600FE451B /* FeedVC.swift in Sources */,
 				6A71F09A206E2ABF00FE451B /* Message.swift in Sources */,
+				6A71F0A5206F755A00FE451B /* GroupFeedCell.swift in Sources */,
 				6A71F086206D5B5400FE451B /* DataService.swift in Sources */,
+				6A71F0A7206F75DC00FE451B /* GroupFeedVC.swift in Sources */,
 				6A71F090206D723700FE451B /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
